@@ -1,0 +1,117 @@
+.apresentacaoTabela {
+	margin: 10px 0;
+	font: normal 10px Verdana, Arial;
+}
+.span96 {
+	width: 96%;
+	display: block;
+	overflow: auto;
+}
+.span50 {
+	width: 70%;
+	display: inline-block;
+}
+
+.span40 {
+	width: 40%;
+	display: inline-block;
+}
+
+.span10 {
+	width: 10%;
+	display: inline-block;
+}
+
+.no-decoration {text-decoration: none;}
+
+.middle * {vertical-align: middle;}
+
+body.efomento {
+	font: normal 10pt Verdana, Arial;
+	color: #000;
+	margin: 5px;
+}
+
+label.label {
+	font: normal 10px Verdana, Arial;
+	color: #000066;
+	display: inline-block;
+	text-align: right;
+}
+
+table.efomento, #table-efomento {
+	border-collapse: collapse;
+	color: #000066;
+	padding: 2px;
+}
+
+table.efomento th, #table-efomento th {
+	border: 1px solid #004A88;
+	color: #000066;
+}
+
+table.efomento thead th , #table-efomento thead th {
+	padding: 5px;
+	background-color: #E8F5FF;
+}
+
+#th-portlet-correlatos {
+	color: #333;
+ 	background-color: #DDE8F4;
+ 	border-top: 1px solid #CCC;
+ 	border-bottom: 1px solid #CCC;
+ 	border-left: 1px solid #CCC;
+ 	border-right: 1px solid #CCC;
+}
+
+#listaAreasCorrelatas td, #listaSetoresCorrelatos td {
+	color: #333;
+	text-align: left;	
+}
+
+table.efomento thead th a , #table-efomento thead th a {
+	color: #174A88;
+	font: bold 10px Verdana;
+}
+
+table.efomento tbody, #table-efomento tbody {border: 1px solid #CCC;}
+table.efomento tbody tr.even, #table-efomento tbody tr.even {background-color: #FAFAFA;}
+table.efomento tbody tr td, #table-efomento tbody tr td {text-align:center;}
+table.efomento tbody tr:hover, #table-efomento tbody tr:hover {background-color: #EFEFEF;}
+
+span.pagebanner, span.pagelinks {
+	text-align: center;
+	padding: 2px 4px 2px 4px;
+	width: 100%;
+	margin-top: 10px;
+	display: block;
+}
+
+.box {
+	border: 1px solid #006699;
+	padding: 5px;
+}
+
+h3.pagina-interna {
+	margin: 0 0 20px;
+	padding: 10px 0 0 10px;
+	color: #000066;
+	background: url(../images/tituloNovo.png) no-repeat;
+	font: bold 12px verdana;
+	height: 33px;
+}
+
+p.info, p.erro {
+	font: bold 9pt Verdana, Arial;
+	margin: 0;
+	padding: 10px 0 10px 30px;
+}
+
+p.info {
+	color: #000066;
+	background: url(../images/ico_salvo.gif) no-repeat 0 50%;
+}
+p.erro {
+	color: red;
+	background: url(../images/error.gif) no-repeat 0 50%;
+}

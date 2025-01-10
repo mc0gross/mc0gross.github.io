@@ -1,0 +1,15 @@
+.form-field {
+	background-image:url(../../../images/gui/img_style_textfield.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;	
+	color:#333333;
+	margin-right:4px;
+	margin-bottom:8px;	
+}
+.form-field-inputtext{
+	padding:3px;
+}
+.form-field-select-box {
+	font-size:11px;
+	padding:6px;    
+}

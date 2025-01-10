@@ -1,0 +1,36 @@
+div.tooltip-wrapper {
+	-moz-behavior: url(border-radius.htc);
+border-radius:4px;
+	background:#FFFFCC;
+	border:1px solid #A6A6A6;
+	color:#333333;
+	font:normal 0.9em/1.6em arial;
+	padding:0.3em 0.6em;
+	position:absolute;
+	text-align:center;
+	text-transform:uppercase;
+	white-space:nowrap;
+}
+
+div.tooltip-wrapper span.tooltip-arrow {
+	border-top:7px #A6A6A6 solid; 
+	border-right:6px transparent solid; 
+	border-left:6px transparent solid; 
+	position:absolute; 
+	left:50%; 
+	bottom:-7px; 
+	margin-left:-6px; 
+	font-size:0; 
+	line-height:0; 
+	width:0
+}
+
+div.tooltip-wrapper span.tooltip-arrow span {
+	border-top:6px #FFFFCC solid; 
+	border-right:5px transparent solid; 
+	border-left:5px transparent solid; 
+	position:absolute; 
+	top:-7px; 
+	margin-left:-5px;
+	width:0
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+ <link href="br_data/display.css" rel="stylesheet" type="text/css">  <link href="estilo.css" rel="stylesheet" type="text/css">     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript" language="JavaScript"> 
+function uploadComp(numAleatorio) {  
+ 
+     var f = document.forms['uploadFormComp'+numAleatorio]; 
+
+     if (f.arq.value == '') { 
+         alert('Selecione um arquivo primeiro.'); 
+         return false;  
+     } else {  
+ 
+         var divArquivo = document.getElementById('divArquivo'); 
+         var divLista = document.getElementById('divLista'); 
+         var divPb = document.getElementById('divPb'); 
+ 
+         divArquivo.style.display = 'none'; 
+         if(divLista != null){ 
+           divLista.style.display = 'none'; 
+         } 
+         divPb.style.display = 'block'; 
+ 
+         f.metodo.value = 'upload' 
+         f.submit(); 
+     }   
+ }     
+ 
+ function apagaArquivosComp(numAleatorio) { 
+ 
+     var f = document.forms['uploadFormComp'+numAleatorio]; 
+ 
+     f.metodo.value = 'excluiTodos' 
+     f.submit(); 
+ } 
+ 
+ function excluirComp(idObj, numAleatorio) { 
+ 
+     var f = document.forms['uploadFormComp'+numAleatorio]; 
+ 
+     f.idObj.value = idObj; 
+     f.metodo.value = 'excluir' 
+     f.submit(); 
+ }     
+ 
+ function abrirArquivoComp(idObj, numAleatorio) { 
+ 
+     var f = document.forms['uploadFormComp'+numAleatorio]; 
+  
+     f.idObj.value = idObj; 
+     f.metodo.value = 'abrirArquivo' 
+     f.submit(); 
+ }  
+ 
+ function dicas(texto) {
+ 
+   var janela = window.open("../jsp/comum/dicasUpload.jsp?texto="+texto,"Dicas","width=550,height=500,left=200,top=100,toolbar=no") 
+} 
+ 
+function retornaProtocolo(nomeCampoProtocolo, numAleatorio) { 
+ 
+    var f = document.forms['uploadFormComp'+numAleatorio]; 
+ 
+     var idProtocolo = parent.document.forms[0][nomeCampoProtocolo];  
+ 
+    idProtocolo.value = ""; 
+    f.numProtocolo.value = idProtocolo.value; 
+} 
+ 
+ </script> 
+ </head> 
+  <body onload=" retornaProtocolo('listaTipoArquivos[0].numeroProtocolo','0.41818911877907816')"> 
+ 
+ <form id="uploadFormComp0.41818911877907816" name="uploadFormComp0.41818911877907816" method="post" action="/efomento/servlet/br.cnpq.repositorio.upload.servlet.UploadServlet" enctype="multipart/form-data">    
+    <input type="hidden" name="metodo" value="iniciar">
+    <input type="hidden" name="objReferencia" value="K8060167Y0"> 
+    <input type="hidden" name="idObj"> 
+    <input type="hidden" name="paramSchema" value="SOLICFOMENTO">
+    <input type="hidden" name="tipoArquivo" value="191">
+    <input type="hidden" name="titulo" value="null">
+    <input type="hidden" name="extensoes" value="pdf, ">
+    <input type="hidden" name="maxUpload" value="1">
+    <input type="hidden" name="maxTamanho" value="1024000.0">
+    <input type="hidden" name="pathSistema" value="/efomento">
+    <input type="hidden" name="numProtocolo" value="">
+    <input type="hidden" name="protocoloRetorno" value="listaTipoArquivos[0].numeroProtocolo">
+    <input type="hidden" name="numAleatorioRetorno" value="null">
+    <input type="hidden" name="idFrame" value="null">
+    <input type="hidden" name="verificarUpload" value="true">
+    <input type="hidden" name="numAleatorio" value="0.41818911877907816">
+    <input type="hidden" name="permiteExcluir" value="true">    <input type="hidden" name="mostraLista" value="true">    <input type="hidden" name="mostraCabecalho" value="false">    <input type="hidden" name="mostraParametros" value="true">    <input type="hidden" name="mostraDicas" value="false">    <input type="hidden" name="caracteresProibidos" value="null">    <input type="hidden" name="extensaoArquivoMaiusculo" value="false">
+    <table cellpadding="0" cellspacing="0" width="580" id="cont">
+           <tbody><tr id="divArquivo" style="display:block">
+                <td bgcolor="" align="center" width="580">
+                    <strong>&nbsp;</strong>                     <input type="file" name="arq" size="50" value="" class="select"> 
+                        <input type="button" class="select" id="btUpload" onclick="uploadComp('0.41818911877907816')" value="Anexar" title="Clique para anexar o arquivo selecionado.">                        
+                </td>                    
+           </tr>           
+           <tr id="divPb" style="display:none">
+
+                <td bgcolor="" align="center" width="580">
+                    Enviando arquivo...<br>
+                    <img src="br_data/progressbar.gif">
+                </td>                    
+           </tr>
+                   </tbody></table>
+      </form>
+<script type="text/javascript" language="JavaScript"> 
+parent.document.getElementById("componenteUpload0.41818911877907816").height = 42; 
+</script> 
+  
+  
+
+</body></html>

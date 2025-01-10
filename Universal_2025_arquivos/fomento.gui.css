@@ -1,0 +1,155 @@
+/* tree */
+
+div.tree-wrapper {position:relative; overflow:auto; font:normal 10px arial}
+div.tree-wrapper ul {list-style:none; padding:0; margin:0; font:normal 11px arial}
+div.tree-wrapper ul ul {padding-left:18px}
+div.tree-wrapper ul li {padding:2px 0}
+div.tree-wrapper ul a.icon {display:inline-block; width:15px; height:15px; cursor:pointer; margin-right:3px; outline:0; position:relative; top:3px}
+div.tree-wrapper ul a.plus {background:url(../imagens/tree-plus.png) 50% 50% no-repeat}
+div.tree-wrapper ul a.minus {background:url(../imagens/tree-minus.png) 50% 50% no-repeat}
+div.tree-wrapper ul a.closed {background:url(../imagens/tree-closed.png) 50% 50% no-repeat}
+div.tree-wrapper ul a.opened {background:url(../imagens/tree-opened.png) 50% 50% no-repeat}
+div.tree-wrapper ul a.item {background:url(../imagens/tree-item.png) 50% 50% no-repeat}
+div.tree-wrapper ul a.label {color:#000; text-decoration:none; font:normal 10px arial}
+div.tree-wrapper ul a.label:hover {text-decoration:underline}
+div.tree-wrapper ul a.match {background:#3A80F3; color:#fff; border:1px solid #000; padding:1px 2px}
+div.tree-wrapper ul a.selected {background:#F7BE77; color:#000; border:1px dashed #000; padding:1px 2px}
+div.tree-wrapper ul a.marked {color:#f00; font-weight:bold}
+div.tree-wrapper ul span.spacer {display:inline-block; height:100%}
+
+/* suggest */
+
+div.suggest-wrapper {white-space:nowrap; display:inline-block}
+div.suggest-wrapper input {width:100%}
+div.suggest-wrapper div.suggest-list {position:absolute; overflow:hidden; display:none; top:0; z-index:9999}
+div.suggest-wrapper div.suggest-list h1, div.suggest-wrapper div.suggest-list h2, div.suggest-wrapper div.suggest-list h3, div.suggest-wrapper div.suggest-list h4 {display:block; width:auto; height:1px; overflow:hidden; margin:0; background:#D2E4FA; display:none}
+div.suggest-wrapper div.suggest-list h1 {margin:0 4px;}
+div.suggest-wrapper div.suggest-list h2 {margin:0 2px;}
+div.suggest-wrapper div.suggest-list h3 {margin:0 1px; height:2px; background:#fff}
+div.suggest-wrapper div.suggest-list div.suggest-content {margin:0; background:#fff; height:auto; padding:3px; border:1px solid #333; overflow:auto}
+div.suggest-wrapper div.suggest-list div.suggest-content a {text-decoration:none; color:#333; font:normal 11px arial; display:block; white-space:nowrap; cursor:pointer; padding:2px 5px;}
+div.suggest-wrapper div.suggest-list div.suggest-content a.selected {background:#00529b; color:#fff}
+
+/* panel */
+
+div.panel-wrapper {border:1px solid #00598D; margin-bottom:5px; background:#fff}
+div.panel-wrapper:last-child{margin-bottom:0}
+div.panel-wrapper div.panel-header {height:20px; background:#DDE8F4; color:#006; font:bold 10px verdana; line-height:20px; text-indent:5px; border-bottom:1px solid #ccc}
+div.panel-wrapper div.panel-content {margin:3px; background:#fff; font:normal 10px verdana}
+div.panel-wrapper div.panel-pad {padding:5px}
+
+div.panel-wrapper div.panel-top-bar {margin:3px; padding:5px; color:#333; font:normal 11px arial}
+
+div.panel-wrapper div.panel-bottom-bar {margin:3px; height:20px; padding:2px 0; color:#333; font:normal 11px arial; border:1px solid #ccc}
+div.panel-wrapper div.panel-bottom-bar > * {margin-left:5px; float:left}
+
+div.panel-wrapper div.panel-bottom-bar div {height:100%; line-height:175%}
+
+div.panel-wrapper div.panel-bottom-bar a {height:100%; line-height:175%; text-decoration:none; color:#333; padding:0 3px; font-weight:bold; color:#888}
+div.panel-wrapper div.panel-bottom-bar a:hover {text-decoration:underline; color:#000}
+
+div.panel-wrapper div.panel-bottom-bar span.splitter {display:block; height:100%; width:2px; background:#ccc}
+
+/* grid */
+
+div.grid-wrapper {border:1px solid #ccc}
+div.grid-wrapper div.grid-header {}
+div.grid-wrapper div.grid-content {overflow:auto}
+
+div.grid-wrapper table {width:100%; text-align:left; table-layout:fixed; color:#006; font:normal 11px arial; color:#333}
+div.grid-wrapper table th {height:20px; background:#DDE8F4; border-bottom:1px solid #ccc; padding:0px; text-align:left; text-indent:5px}
+div.grid-wrapper table td {height:22px !important; border-top:1px solid #ffffff; border-bottom:1px solid #EDEDED; padding:0px; overflow:hidden}
+div.grid-wrapper table tr {cursor:pointer}
+div.grid-wrapper table tr.odd td {background:#FAFAFA}
+div.grid-wrapper table tr.hover td {background:#EFEFEF; border-top:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; font-weight:bold}
+div.grid-wrapper table tr.selected td {background:#DFE8F6; border-top:1px dotted #A3BAE9; border-bottom:1px dotted #A3BAE9}
+
+div.grid-wrapper table td.hidden * {visibility: hidden}
+div.grid-wrapper table tr.hover td.hidden *, div.grid-wrapper table tr.selected td.hidden * {visibility: visible}
+
+div.grid-wrapper div.cell-wrapper {margin:0 0 0 5px;}
+
+/* win */
+
+div.win-overlay {position:absolute; top:0; left:0; width:100%; height:100%; background:#ccc;}
+
+div.win-wrapper {position:absolute}
+div.win-wrapper table.win-holder {width:auto; border-collapse:collapse}
+div.win-wrapper table.win-holder tr.win-top > td, div.win-wrapper table.win-holder tr.win-mid > td, div.win-wrapper table.win-holder tr.win-bottom > td {width:1px; height:1px; padding:0; margin:0}
+div.win-wrapper table.win-holder tr.win-top td {height:3px; overflow:hidden}
+div.win-wrapper table.win-holder tr.win-top td.win-top-left {width:3px; background:url(../imagens/win-corner.png) 0 0}
+div.win-wrapper table.win-holder tr.win-top td.win-top-right {width:3px; background:url(../imagens/win-corner.png) -3px 0}
+div.win-wrapper table.win-holder tr.win-top td.win-top-center {background:url(../imagens/win-v.png) 0 0}
+div.win-wrapper table.win-holder tr.win-mid td {height:auto; overflow:hidden}
+div.win-wrapper table.win-holder tr.win-mid td.win-mid-left {width:3px; background:url(../imagens/win-h.png) 0 0 repeat-y}
+div.win-wrapper table.win-holder tr.win-mid td.win-mid-right {width:3px; background:url(../imagens/win-h.png) -3px 0 repeat-y}
+div.win-wrapper table.win-holder tr.win-mid td.win-mid-center {background:#CCD9E8;}
+div.win-wrapper table.win-holder tr.win-bottom td {height:3px; overflow:hidden;}
+div.win-wrapper table.win-holder tr.win-bottom td.win-bottom-left {width:3px; background:url(../imagens/win-corner.png) 0 -3px}
+div.win-wrapper table.win-holder tr.win-bottom td.win-bottom-right {width:3px; background:url(../imagens/win-corner.png) -3px -3px}
+div.win-wrapper table.win-holder tr.win-bottom td.win-bottom-center {background:url(../imagens/win-v.png) 0 -3px}
+
+div.win-wrapper div.win-header {height:20px; cursor:move; overflow:hidden}
+
+div.win-wrapper div.win-tools {float:right; margin:2px 2px 0 0}
+div.win-wrapper div.win-title {float:left; font:bold 11px verdana; color:#15428B; line-height:16px; text-indent:4px; overflow:hidden}
+div.win-wrapper div.win-title img {vertical-align:bottom; margin-right:3px; height:18px}
+
+div.win-wrapper a.tool {width:15px; height:14px; display:inline-block; cursor:pointer;}
+
+div.win-wrapper a.close {background:url(../imagens/tool-sprites.gif) 0 0 no-repeat}
+div.win-wrapper a.close:hover {background:url(../imagens/tool-sprites.gif) -15px 0 no-repeat}
+
+div.win-wrapper div.win-content {background:#fff; border:1px solid #88A0BE; font:normal 10px verdana; overflow:auto}
+
+div.win-wrapper div.win-pad {padding:3px; margin:2px; overflow:auto; background:#fff}
+
+div.win-wrapper ul.alert {padding:0 10px 0 100px; background:url(../imagens/alert.png) no-repeat 15px 50%; min-height:50px}
+div.win-wrapper ul.alert li {line-height:18px}
+
+div.win-wrapper ul.error {padding:0 10px 0 100px; background:url(../imagens/error.png) no-repeat 15px 50%; min-height:50px}
+div.win-wrapper ul.error li {line-height:18px}
+
+div.win-wrapper ul.success {padding:0 10px 0 100px; background:url(../imagens/success.png) no-repeat 15px 50%; min-height:50px}
+div.win-wrapper ul.success li {line-height:18px}
+
+div.win-wrapper ul.question {padding:0 10px 0 100px; background:url(../imagens/question.png) no-repeat 15px 50%; min-height:50px}
+div.win-wrapper ul.question li {line-height:18px}
+
+div.win-wrapper div.center {text-align:center; padding:25px 0}
+
+div.win-wrapper div.win-bottom-bar {padding:6px 0 4px 0}
+div.win-wrapper div.win-bottom-bar span.botao {margin:0 3px; border:0; width:auto}
+
+/* tab */
+
+div.tab-wrapper {background:#D0DDF1;}
+div.tab-wrapper div.tab-header {height:25px; background:url(../imagens/tab-header.png) 0 100% repeat-x; padding:2px 0 0 2px; overflow:hidden}
+div.tab-wrapper div.tab-content {background:#fff}
+div.tab-wrapper div.tab {padding:3px}
+
+div.tab-wrapper div.tab-header a {outline:0}
+
+div.tab-wrapper span.active-tab {display:inline-block; height:22px; white-space:nowrap; background:url(../imagens/tab-left-active.png) 0 0 no-repeat; margin-right:2px}
+div.tab-wrapper span.active-tab a {display:block; height:100%; text-decoration:none; font:bold 11px arial; color:#15428B; line-height:22px; padding-left:10px}
+div.tab-wrapper span.active-tab a span {display:block; height:100%; background:url(../imagens/tab-right-active.png) 100% 0 no-repeat; padding-right:10px}
+
+div.tab-wrapper span.inactive-tab {display:inline-block; height:21px; white-space:nowrap; background:url(../imagens/tab-left-inactive.png) 0 0 no-repeat; margin-right:2px}
+div.tab-wrapper span.inactive-tab a {display:block; height:100%; text-decoration:none; font:normal 11px arial; color:#15428B; line-height:22px; padding-left:10px}
+div.tab-wrapper span.inactive-tab a span {display:block; height:100%; background:url(../imagens/tab-right-inactive.png) 100% 0 no-repeat; padding-right:10px}
+div.tab-wrapper span.inactive-tab a:hover {text-decoration:underline}
+
+/* button */
+
+span.button-wrapper {display:inline-block; height:23px; background:url(../imagens/botao-left.png) 0 0 no-repeat; white-space:nowrap;}
+span.button-wrapper a {display:inline-block; height:100%; text-decoration:none; font:normal 12px verdana; color:#000; line-height:22px; padding-left:10px}
+span.button-wrapper span.button-content {display:inline-block; height:100%; background:url(../imagens/botao-right.png) 100% 0 no-repeat; padding-right:10px}
+span.button-wrapper a:hover {text-decoration:underline}
+
+/* button */
+
+span.botao {display:inline-block; height:23px; background:url(../imagens/botao-left.png) 0 0 no-repeat; white-space:nowrap;}
+span.botao a {display:inline-block; height:100%; text-decoration:none; font:normal 12px verdana; color:#000; line-height:22px; padding-left:10px}
+span.botao a span {display:inline-block; height:100%; background:url(../imagens/botao-right.png) 100% 0 no-repeat; padding-right:10px}
+span.botao a:hover {text-decoration:underline}
+

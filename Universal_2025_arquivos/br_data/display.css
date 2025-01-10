@@ -1,0 +1,247 @@
+th {
+	padding: 2px 4px 2px 4px;
+	text-align: center;
+	vertical-align: top;
+        color: #006394;
+
+}
+thead tr {
+  background-color: #DDE8F4;
+}
+
+th.order1 a {display:block; background:url(../images/geoDistribuicao_up.gif) no-repeat 98% 100%; text-decoration:underline; }
+th.order2 a {display:block; background:url(../images/geoDistribuicao_down.gif) no-repeat 98% 100%; text-decoration:underline; }
+
+th a, th a:visited {
+  color: #006394;
+}
+th a:hover {
+  text-decoration: none;
+  color: #006394;
+}
+th.sorted a, th.sortable a {
+	background-position: right;
+	display: block;
+	width: 100%;
+}
+
+tr.odd {
+  background-color: #fff
+}
+tr.tableRowEven, tr.even {
+  background-color: #fea
+}
+
+table.its thead tr {
+  background-color: #69c;
+}
+table.its tr.even {
+  background-color: #def;
+}
+
+table.mars thead tr {
+  background-color: #9c9;
+}
+table.mars tr.even {
+  background-color: #ccb;
+}
+table.mars tr.odd {
+  background-color: #eec;
+}
+
+table.simple thead tr {
+  background-color: #E1F0FF;
+}
+table.simple tr.even {
+  background-color: #F4FAFF;
+}
+table.simple {
+	border: 1px solid #004A88;
+	border-collapse: collapse;
+}
+table.simple td,table.simple th{
+	border: 1px solid #004A88;
+}
+table.simple2 thead tr {
+  background-color: #E1F0FF;
+}
+table.simple2 tr.even {
+  background-color: #F4FAFF;
+}
+
+table.simple3 thead tr {
+  background-color: #E2FCF4;
+}
+table.simple3 tr.even {
+  background-color: #E2FCF4;
+}
+table.simple2 {
+	border: 1px solid #004A88;
+	border-collapse: collapse;
+}
+table.simple2 td,table.simple2 th{
+	border: 1px solid #004A88;
+	font: bolder 9px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+
+table.simple4 {
+    border:1px solid #ffffff;
+    border-collapse: collapse;
+    background-color: #c5daf1;
+}
+table.simple4 td,table.simple4 th{
+    border:1px solid #ffffff;
+    background-color: #c5daf1;
+}
+
+table.simpleClean thead tr {
+  background-color: #E1F0FF;
+}
+table.simpleClean tr.even {
+  background-color: #F4FAFF;
+}
+table.simpleClean {
+    border: 0px solid #004A88;
+    border-collapse: collapse;
+}
+table.simpleClean td,table.simpleClean th{
+    border: 0px solid #004A88;
+}
+
+
+table.planilha thead  tr {
+	position: relative;
+  background-color: #E1F0FF;
+}
+table.planilha tr.even {
+  background-color: #F4FAFF;
+}
+table.planilha {
+	border: 1px solid #004A88;
+	border-collapse: collapse;
+}
+table.planilha td,table.planilha th{
+	border: 1px solid #004A88;
+}
+
+table.nocol tbody td,table.nocol tbody th{
+	border-left: none;
+	border-right: none;
+}
+
+table.report td, table.report th{
+	font:         menu;
+}
+table.report th{
+	background:   buttonface;
+	border-width: 1px;
+	border-style: solid;
+	border-color: threedhighlight threedshadow threedshadow threedhighlight;
+	cursor:       pointer;
+}
+table.report idcol {
+	background: buttonface;
+}
+
+table.report tr.even{
+	background-color: #399;
+}
+table.report tbody {
+	height: 100px;
+	overflow: auto;
+}
+
+table.report {
+	height: 120px;
+	overflow: auto;
+}
+
+table.report tbody tr{
+	height: 10px;
+}
+
+table.mark td.tableCellError {
+	background-color: #d00;
+	color: #fff;
+}
+
+table.sublist {
+	margin: 0 0 0 0;
+	width: 100%;
+}
+table.sublist td, table.sublist th {
+	width: 50%;
+}
+
+div.exportlinks {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	margin: -10px 0 10px 0;
+	width: 79%;
+}
+
+span.export {
+	padding: 0 4px 1px 20px;
+	display:inline; 
+	cursor: pointer;
+}
+
+span.excel {
+	background-image: url(../images/display/ico_file_excel.png);
+}
+span.csv {
+	background-image: url(../images/display/ico_file_csv.png);
+}
+span.xml {
+	background-image: url(../images/display/ico_file_xml.png);
+}
+
+span.pagebanner {
+  text-align: center;
+	padding: 2px 4px 2px 4px;
+	width: 100%;
+	margin-top: 10px;
+        font-size: 10px;
+	display:block;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+
+span.pagelinks {
+  text-align: center;
+	padding: 2px 4px 2px 4px;
+	width: 100%;
+        font-size: 10px;
+	display:block;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	margin-bottom: 0px;
+}
+
+
+
+table.simple td.textRed {color: #b11;}
+
+table.simple .linhaAmarela td {background-color: rgb(255,255,181);}
+
+span.historico {
+	text-align: left;
+	font: normal 8px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+span.historicoCenter {
+	text-align: center;
+	font: normal 8px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+span.historicoRight {
+	text-align: right;
+	font: normal 8px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
